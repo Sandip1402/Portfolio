@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base */
+  --bg: #f8fafc;
+  --bg-secondary: #ffffff;
+
+  /* Text */
+  --text: #0f172a;
+  --text-muted: #475467;
+
+  /* Surfaces */
+  --card: #ffffff;
+  --border: #e2e8f0;
+
+  /* Brand */
+  --accent: #2563eb;
+  --accent-secondary: #7c3aed;
+
+  /* Effects */
+  --gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+  --glow: rgba(37, 99, 235, 0.15);
+}
+
+.dark {
+  --bg: #020617;
+  --bg-secondary: #0f172a;
+
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+
+  --card: #0f172a;
+  --border: #1e293b;
+
+  --accent: #60a5fa;
+  --accent-secondary: #a78bfa;
+
+  --gradient: linear-gradient(135deg, #60a5fa 0%, #a78bfa 100%);
+  --glow: rgba(96, 165, 250, 0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-geist-sans);
+  min-height: 100vh;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* colors */
+  --color-background: var(--bg);
+  --color-background-secondary: var(--bg-secondary);
+
+  --color-foreground: var(--text);
+  --color-muted: var(--text-muted);
+
+  --color-card: var(--card);
+  --color-border: var(--border);
+
+  --color-accent: var(--accent);
+
+  /* fonts */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Project Page - project article card */
+article:target {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px var(--accent),
+    0 20px 40px var(--glow);
+  transform: translateY(-4px);
 }
