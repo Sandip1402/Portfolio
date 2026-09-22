@@ -17,7 +17,7 @@ const projects = [
       'A modern full-stack hotel management platform featuring room booking, authentication, reservation management, and an intuitive admin dashboard.',
     tech: ['React', 'Node.js', 'Express', 'Postgresql', 'Auth0', 'Tailwind CSS'],
     github: 'https://github.com/Sandip1402/hoteru',
-    demo: '#'
+    demo: 'https://hoteru-personal.netlify.app/'
   },
   {
     id: 'portfolio',
@@ -26,7 +26,7 @@ const projects = [
       'Modern Next.js portfolio with dark/light theme, responsive design, SEO optimization, and project-focused architecture.',
     tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     github: 'https://github.com/Sandip1402/Portfolio',
-    demo: '#',
+    demo: 'https://sandipdas-portfolio.netlify.app/',
   },
 ]
 
