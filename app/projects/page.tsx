@@ -28,6 +28,15 @@ const projects = [
     github: 'https://github.com/Sandip1402/Portfolio',
     demo: 'https://sandipdas-portfolio.netlify.app/',
   },
+  {
+    id: 'keeper-vault',
+    title: "keeper",
+    description:
+    "An application to store login info (e.g. username, password, email etc) into user's own device with encryption to make login easier without clicking 'forgot your password' everytime",
+    tech: ['React Native', 'Expo', 'TypeScript', 'Zod'],
+    github: 'https://github.com/Sandip1402/keeper-vault',
+    demo: "#"
+  }
 ]
 
 export default function ProjectsPage() {
