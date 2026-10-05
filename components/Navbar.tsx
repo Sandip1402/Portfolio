@@ -6,6 +6,8 @@ import { usePathname } from 'next/navigation'
 import Image from "next/image";
 import { useTheme } from 'next-themes'
 import { FaHome, FaTools, FaEnvelope, FaBars } from 'react-icons/fa'
+import logoDark from '@/public/logo_dark.png'
+import logoLight from '@/public/logo_light.png'
 import ThemeToggle from './ThemeToggle'
 
 
@@ -53,7 +55,7 @@ export default function Navbar() {
         <Link href="/">
           {mounted && (
             <Image
-              src={isDark ? "/logo_dark.png" : "/logo_light.png"}
+              src={isDark ? logoDark : logoLight}
               alt="SD Logo"
               width={48}
               height={48}

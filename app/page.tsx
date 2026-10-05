@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import Section from '@/components/Section'
+import profileImage from '@/public/profile.jpeg'
 import {
   FaReact,
   FaNodeJs,
@@ -154,7 +155,7 @@ export default function Home() {
           <div className='flex justify-center md:justify-end'>
             <div className='rounded-full border border-(--border) bg-(--card) p-2 shadow-lg'>
               <Image
-                src='/profile.jpeg'
+                src={profileImage}
                 alt='Sandip Das'
                 width={340}
                 height={340}
